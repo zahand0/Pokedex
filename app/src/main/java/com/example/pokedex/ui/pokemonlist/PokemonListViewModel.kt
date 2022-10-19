@@ -105,6 +105,7 @@ class PokemonListViewModel @Inject constructor(
                     pokemonList.value += pokedexEntries
                     Timber.tag(TAG).d("loaded")
                 }
+                is Resource.Loading -> {}
             }
         }
     }
